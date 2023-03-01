@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drag and drop</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <p>
-        arraste a imagem para dentro do retângulo.
+        Arraste a imagem para dentro de um retângulo.
     </p>
-    <img id="drag1" src="paisagem.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
-    <div id="div" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="div" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img class="drag" id="drag1" data-peso="50" src="assets/paisagem.jpg" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)" width="336" height="69">
+        <img class="drag" id="drag2" data-peso="100" src="assets/paisagem.jpg" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)" width="336" height="69">
+    </div>
+    <div class="div" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <p>Peso total das compras: <span id="pesoTotal">0Kg</span></p>
+    <script src="js/script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
