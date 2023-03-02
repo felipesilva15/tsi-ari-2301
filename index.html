@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <p>
-        Arraste a imagem para dentro de um retângulo.
-    </p>
+    <p class="bold">Arraste a imagem para dentro de um retângulo.</p>
     <div class="div" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img class="drag" id="drag1" data-peso="50" src="assets/paisagem.jpg" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)" width="336" height="69">
-        <img class="drag" id="drag2" data-peso="100" src="assets/paisagem.jpg" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)" width="336" height="69">
+        <img class="drag" id="drag1" data-peso="20" src="assets/carnes.jfif" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)">
+        <img class="drag" id="drag2" data-peso="5" src="assets/frutas.jfif" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)">
     </div>
     <div class="div" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     <p>Peso total das compras: <span id="pesoTotal">0Kg</span></p>
