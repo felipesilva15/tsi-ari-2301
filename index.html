@@ -4,17 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drag and drop</title>
+    <title>Local Storage</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <p class="bold">Arraste a imagem para dentro de um retângulo.</p>
-    <div class="div" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <img class="drag" id="drag1" data-peso="20" src="assets/carnes.jfif" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)">
-        <img class="drag" id="drag2" data-peso="5" src="assets/frutas.jfif" draggable="true" ondragstart="drag(event)" ondragend="dragEnd(event)">
-    </div>
-    <div class="div" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    <p>Peso total das compras: <span id="pesoTotal">0Kg</span></p>
-    <script src="js/script.js"></script>
+    <h1>Web storage</h1>
+    <script src="js/sessionStorage.js"></script>
 </body>
 </html>

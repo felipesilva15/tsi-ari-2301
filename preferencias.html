@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="dados">
+        <div>
+            <label for="nome">Nome</label><br>
+            <input type="text" name="fnome" id="fnome" size="20"><br><br>
+        </div>
+        <div>
+            <label for="nome">Cor de fundo</label><br>
+            <input type="radio" name="fcorF" onclick="defineCor(1, 'red')">Vermelho<br>
+            <input type="radio" name="fcorF" onclick="defineCor(1, 'green')">Verde<br>
+            <input type="radio" name="fcorF" onclick="defineCor(1, 'blue')">Azul<br><br>
+        </div>
+        <div>
+            <label for="nome">Cor de texto</label><br>
+            <input type="radio" name="fcorT" onclick="defineCor(0, 'black')">Preto<br>
+            <input type="radio" name="fcorT" onclick="defineCor(0, 'white')">Branco<br>
+            <input type="radio" name="fcorT" onclick="defineCor(0, 'yellow')">Amaraelo<br><br>
+        </div>
+        <div>
+            <input type="button" value="Gravar" onclick="gravar()">
+        </div>
+    </form>
+    <script src="js/preferencias.js"></script>
+</body>
+</html>
