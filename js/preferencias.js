@@ -1,6 +1,12 @@
 let corFundo, corFonte, nome; 
 
 const inputNome = document.getElementById('fnome');
+const form = document.getElementById('fconf');
+const painel = document.getElementById('painel');
+
+function mostrarOpcoes(){
+    form.style.display = 'block';
+}
 
 function defineCor(op, cor) {
     if(op == 1){
@@ -18,6 +24,14 @@ function gravar() {
     localStorage.setItem('corFonte', corFonte);
 }
 
-inputNome.value = localStorage.getItem('nome') ?? '';
-defineCor(1, localStorage.getItem('corFundo') ?? '')
-defineCor(0, localStorage.getItem('corFonte') ?? '')
+function iniciar(){
+    if(localStorage.getItem('nome') && (localStorage.getItem('nome') ?? '') != ''){
+        inputNome.value = localStorage.getItem('nome');
+        painel.innerHTML = 'Seja bem-vindo ' + localStorage.getItem('nome');
+    }
+
+    defineCor(1, localStorage.getItem('corFundo') ?? '')
+    defineCor(0, localStorage.getItem('corFonte') ?? '')
+}
+
+iniciar()

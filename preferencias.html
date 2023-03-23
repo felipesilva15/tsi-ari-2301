@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WebStorage</title>
+    <style>
+        #fconf{
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid #000;
+            background-color: #FFF;
+            display: none;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <form name="dados">
+    <h1>Exemh1lo de WebStorage</h1>
+    <p id="painel"></p>
+    <button onclick="mostrarOpcoes()">Opções</button>
+    <form name="fconf" id="fconf">
         <div>
             <label for="nome">Nome</label><br>
             <input type="text" name="fnome" id="fnome" size="20"><br><br>
