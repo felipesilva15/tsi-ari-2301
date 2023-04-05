@@ -1,0 +1,20 @@
+.card{
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 11px -9px rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+}
+
+.buttons > button{
+    background-color:rgb(53, 199, 61);
+    border: 1px solid #FFF;
+    color: #FFF;
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+}
