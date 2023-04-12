@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "Teste de post",
+      "author": "Felipe Silva",
+      "id": 2
+    },
+    {
+      "title": "Teste de post",
+      "author": "Felipe Silva",
+      "id": 3
+    },
+    {
+      "title": "Teste de post",
+      "author": "Felipe Silva",
+      "id": 4
+    },
+    {
+      "title": "Teste de post",
+      "author": "Felipe Silva",
+      "id": 5
+    },
+    {
+      "title": "Teste de post",
+      "author": "Felipe Silva",
+      "id": 6
+    },
+    {
+      "title": "Teste de post",
+      "author": "Felipe Silva",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
