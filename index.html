@@ -4,15 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elementos SVG</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        svg{
+            background-color: bisque;
+        }
+    </style>
 </head>
 <body>
-    <input type="number" placeholder="Digite um número" id="inputNumber1">
-    <button onclick="calcularQuadrado()">Calcular quadrado</button>
-    <p id="resultado1"></p>
-    <input type="number" placeholder="Digite um número" id="inputNumber2">
-    <button onclick="calcularFatorial()">Calcular fatorial</button>
-    <p id="resultado2"></p>
-    <script src="js/main.js"></script>
+    <svg height="900px" width="1200px">
+        <!-- Cabeça -->
+        <circle cx="248" cy="230" r="75" fill="rgb(253, 199, 180)" stroke="black" stroke-width="1"></circle>
+        <!-- Olhos -->
+        <circle cx="225" cy="210" r="18" fill="darksalmon" stroke="black" stroke-width="1"></circle>
+        <circle cx="275" cy="210" r="18" fill="darksalmon" stroke="black" stroke-width="1"></circle>
+        <!-- Nariz -->
+        <line x1="250" y1="240" x2="250" y2="255" stroke="black" stroke-width="1"></line>
+        <!-- Boca -->
+        <line x1="220" y1="270" x2="280" y2="270" stroke="black" stroke-width="1"></line>
+        <!-- Chapéu -->
+        <polygon points="173,183 319,182 246,38"></polygon>
+        <!-- Percoço -->
+        <line x1="248" y1="305" x2="248" y2="350" stroke="orange" stroke-width="15"></line>
+        <!-- Braços -->
+        <line x1="150" y1="400" x2="90" y2="480" stroke="orange" stroke-width="6"></line>
+        <line x1="410" y1="480" x2="350" y2="400" stroke="orange" stroke-width="6"></line>
+        <!-- Corpo -->
+        <rect x="150" y="350" width="200" height="200" fill="rgb(162, 211, 162)" rx="50"></rect>
+        <!-- Retangulo -->
+        <polygon points="200,450 250,500 300,450 250,400" fill="rgb(108, 143, 108)" rx="20"></polygon>
+        <!-- Pernas -->
+        <line x1="210" y1="550" x2="210" y2="680" stroke="green" stroke-width="15"></line>
+        <line x1="290" y1="550" x2="290" y2="680" stroke="green" stroke-width="15"></line>
+
+        <!-- Olá mundo! -->
+        <text x="320" y="270" font-family="Verdana" font-size="20" transform="translate(50,50)">Olá, mundo!</text>
+        <g transform="translate(100,100) rotate(75)">
+            <rect x="0" y="0" width="50" height="50" fill="blue"/>
+            <circle cx="100" cy="0" r="25" fill="red"/>
+            <ellipse cx="50" cy="100" rx="30" ry="15" fill="green"/>
+        </g>
+    </svg>
 </body>
 </html>
