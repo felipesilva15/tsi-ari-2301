@@ -1,82 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barquinho SVG</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curvas SVG</title>
     <style>
-        body{
-            margin: 0;
-        }
+      body {
+        margin: 0;
+      }
 
-        svg{
-            background-color: bisque;
-        }
+      svg {
+        background-color: white;
+        border: 0.5px solid #999;
+      }
     </style>
-</head>
-<body>
-    <svg height="965px" width="1900px">
-        <g>
-            <!-- Bandeira -->
-            <rect x="220" y="350" width="100" height="60" fill="#000"></rect>
-            <!-- Sol -->
-            <circle cx="270" cy="380" r="10" fill="#FF0"/>
-            <line x1="243" y1="380" x2="255" y2="380" stroke="#FF0" stroke-width="2"></line>
-            <line x1="285" y1="380" x2="297" y2="380" stroke="#FF0" stroke-width="2"></line>
-            <line x1="270" y1="355" x2="270" y2="367" stroke="#FF0" stroke-width="2"></line>
-            <line x1="270" y1="393" x2="270" y2="405" stroke="#FF0" stroke-width="2"></line>
-            <!-- Apoio da bandeira -->
-            <line x1="220" y1="350" x2="220" y2="550" stroke="#964B00" stroke-width="3"></line>
-            <!-- Barco -->
-            <rect x="120" y="550" width="200" height="80" fill="#964B00"></rect>
-            <polygon points="120,550 120,630 70,550" fill="#964B00"></polygon>
-            <polygon points="320,550 320,630 370,550" fill="#964B00"></polygon>
-            <!-- Triângulos -->
-            <polygon points="140,610 160,580 180,610" fill="#482400"></polygon>
-            <polygon points="200,610 220,580 240,610" fill="#482400"></polygon>
-            <polygon points="260,610 280,580 300,610" fill="#482400"></polygon>
-        </g>
-        <g transform="translate(600,-300)">
-            <!-- Bandeira -->
-            <rect x="220" y="350" width="100" height="60" fill="#000"></rect>
-            <!-- Sol -->
-            <circle cx="270" cy="380" r="10" fill="#FF0"/>
-            <line x1="243" y1="380" x2="255" y2="380" stroke="#FF0" stroke-width="2"></line>
-            <line x1="285" y1="380" x2="297" y2="380" stroke="#FF0" stroke-width="2"></line>
-            <line x1="270" y1="355" x2="270" y2="367" stroke="#FF0" stroke-width="2"></line>
-            <line x1="270" y1="393" x2="270" y2="405" stroke="#FF0" stroke-width="2"></line>
-            <!-- Apoio da bandeira -->
-            <line x1="220" y1="350" x2="220" y2="550" stroke="#964B00" stroke-width="3"></line>
-            <!-- Barco -->
-            <rect x="120" y="550" width="200" height="80" fill="#964B00"></rect>
-            <polygon points="120,550 120,630 70,550" fill="#964B00"></polygon>
-            <polygon points="320,550 320,630 370,550" fill="#964B00"></polygon>
-            <!-- Triângulos -->
-            <polygon points="140,610 160,580 180,610" fill="#482400"></polygon>
-            <polygon points="200,610 220,580 240,610" fill="#482400"></polygon>
-            <polygon points="260,610 280,580 300,610" fill="#482400"></polygon>
-        </g>
-        <g transform="translate(600,-300) rotate(45)">
-            <!-- Bandeira -->
-            <rect x="220" y="350" width="100" height="60" fill="#000"></rect>
-            <!-- Sol -->
-            <circle cx="270" cy="380" r="10" fill="#FF0"/>
-            <line x1="243" y1="380" x2="255" y2="380" stroke="#FF0" stroke-width="2"></line>
-            <line x1="285" y1="380" x2="297" y2="380" stroke="#FF0" stroke-width="2"></line>
-            <line x1="270" y1="355" x2="270" y2="367" stroke="#FF0" stroke-width="2"></line>
-            <line x1="270" y1="393" x2="270" y2="405" stroke="#FF0" stroke-width="2"></line>
-            <!-- Apoio da bandeira -->
-            <line x1="220" y1="350" x2="220" y2="550" stroke="#964B00" stroke-width="3"></line>
-            <!-- Barco -->
-            <rect x="120" y="550" width="200" height="80" fill="#964B00"></rect>
-            <polygon points="120,550 120,630 70,550" fill="#964B00"></polygon>
-            <polygon points="320,550 320,630 370,550" fill="#964B00"></polygon>
-            <!-- Triângulos -->
-            <polygon points="140,610 160,580 180,610" fill="#482400"></polygon>
-            <polygon points="200,610 220,580 240,610" fill="#482400"></polygon>
-            <polygon points="260,610 280,580 300,610" fill="#482400"></polygon>
-        </g>
+  </head>
+  <body>
+    <svg width="800" height="700">
+      <path d="M 0 300 Q 200 100, 400 300 Q 600 50, 800 300" fill="#8DBF67" />
+      <rect x="320" y="200" width="100" height="100" fill="orange"></rect>
+      <rect x="358" y="260" width="24" height="40" fill="black"></rect>
+      <polygon points="320,200 370,150 420,200" fill="#482400"></polygon>
+      <circle cx="720" cy="100" r="40" fill="#FF0"/>
+      <path d="M 110,290 Q 60,260 110,220 S 160 260 110 290" fill="green"/>
+      <rect x="100" y="280" width="20" height="35" fill="#482400"></rect>
+      <path d="M 370,300 C 370,480 650,450 300,650 " stroke="gray" stroke-width="24" fill="none"></path>
     </svg>
-</body>
+  </body>
 </html>
